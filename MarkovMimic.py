@@ -1,12 +1,12 @@
 from botAuth import *
 import time, tweepy, datetime
-import ScrapeTweets as MattData
+import ScrapeTweets as UserData
 from MarkovChainBot import *
 from html.parser import HTMLParser
 import datetime
 
 m = MarkovChainBot([r'@.*', '^rt$', r'http.*'])
-tweets = [x.text for x in MattData.statuses]
+tweets = [x.text for x in UserData.statuses]
 m.data = tweets
 m.Train()
 p = HTMLParser()

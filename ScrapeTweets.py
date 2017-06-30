@@ -1,8 +1,7 @@
 from botAuth import *
 import tweepy, time
 
-accountsToScrape = ['matthewdudee']
-username = "matthewdudee"
+username = 'account username'
 
 
 statuses = []
